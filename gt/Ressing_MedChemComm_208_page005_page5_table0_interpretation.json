@@ -1,0 +1,12 @@
+[
+    {
+        "compound": "cis-6i",
+        "hdac1_ic50": "-12.56",
+        "hdac6_ic50": "-12.90"
+    },
+    {
+        "compound": "trans-6i",
+        "hdac1_ic50": "-11.27",
+        "hdac6_ic50": "-12.79"
+    }
+]

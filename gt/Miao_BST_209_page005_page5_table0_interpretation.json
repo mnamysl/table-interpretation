@@ -1,0 +1,22 @@
+[
+    {
+        "compound": "MH1-18",
+        "hdac1_ic50": "119.2",
+        "hdac6_ic50": "11.5"
+    },
+    {
+        "compound": "MH1-21",
+        "hdac1_ic50": "105.6",
+        "hdac6_ic50": "8.6"
+    },
+    {
+        "compound": "SAHA",
+        "hdac1_ic50": "43.2",
+        "hdac6_ic50": "20.7"
+    },
+    {
+        "compound": "ACY1215",
+        "hdac1_ic50": "73.0",
+        "hdac6_ic50": "8.0"
+    }
+]

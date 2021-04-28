@@ -1,0 +1,27 @@
+[
+    {
+        "compound": "SD-01",
+        "hdac1_ic50": "-6.8",
+        "hdac6_ic50": "-4.5"
+    },
+    {
+        "compound": "SD-02",
+        "hdac1_ic50": "-7.7",
+        "hdac6_ic50": "-5.6"
+    },
+    {
+        "compound": "SD-03",
+        "hdac1_ic50": "-7.6",
+        "hdac6_ic50": "-5.2"
+    },
+    {
+        "compound": "SD-04",
+        "hdac1_ic50": "-4.2",
+        "hdac6_ic50": "-5.3"
+    },
+    {
+        "compound": "SD-05",
+        "hdac1_ic50": "-8.2",
+        "hdac6_ic50": "-5.5"
+    }
+]

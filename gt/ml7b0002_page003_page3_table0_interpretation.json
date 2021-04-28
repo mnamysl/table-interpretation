@@ -1,0 +1,52 @@
+[
+    {
+        "compound": "trichostatin A",
+        "hdac1_ic50": "7.7 \u00b1 1.3",
+        "hdac6_ic50": "2.3 \u00b1 1.2"
+    },
+    {
+        "compound": "7a",
+        "hdac1_ic50": ">30000",
+        "hdac6_ic50": "63.9 \u00b1 8.01"
+    },
+    {
+        "compound": "7b",
+        "hdac1_ic50": "28700 \u00b1 1900",
+        "hdac6_ic50": "1570 \u00b1 42"
+    },
+    {
+        "compound": "7c",
+        "hdac1_ic50": ">30000",
+        "hdac6_ic50": "241 \u00b1 81"
+    },
+    {
+        "compound": "7d",
+        "hdac1_ic50": "29300 \u00b1 1100",
+        "hdac6_ic50": "65.1 \u00b1 6.9"
+    },
+    {
+        "compound": "7e",
+        "hdac1_ic50": "7490 \u00b1 318",
+        "hdac6_ic50": "11.4 \u00b1 0.9"
+    },
+    {
+        "compound": "13a",
+        "hdac1_ic50": "6880 \u00b1 650",
+        "hdac6_ic50": "2.79 \u00b1 0.12"
+    },
+    {
+        "compound": "13b",
+        "hdac1_ic50": "6570 \u00b1 820",
+        "hdac6_ic50": "14.8 \u00b1 5.2"
+    },
+    {
+        "compound": "13c",
+        "hdac1_ic50": ">30000",
+        "hdac6_ic50": "33.3 \u00b1 2.5"
+    },
+    {
+        "compound": "24",
+        "hdac1_ic50": "N.T.c",
+        "hdac6_ic50": "534 \u00b1 3.5"
+    }
+]

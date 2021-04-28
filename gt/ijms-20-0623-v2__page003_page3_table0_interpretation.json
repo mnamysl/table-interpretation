@@ -1,0 +1,32 @@
+[
+    {
+        "compound": "6a",
+        "hdac1_ic50": ">50,000",
+        "hdac6_ic50": "1961"
+    },
+    {
+        "compound": "6b",
+        "hdac1_ic50": "388",
+        "hdac6_ic50": "21"
+    },
+    {
+        "compound": "8a",
+        "hdac1_ic50": ">100,000",
+        "hdac6_ic50": "79,290"
+    },
+    {
+        "compound": "8b",
+        "hdac1_ic50": ">100,000",
+        "hdac6_ic50": "1302"
+    },
+    {
+        "compound": "8c",
+        "hdac1_ic50": ">100,000",
+        "hdac6_ic50": "628"
+    },
+    {
+        "compound": "SAHA",
+        "hdac1_ic50": "236",
+        "hdac6_ic50": "226"
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "compound": "6a",
+        "hdac1_ic50": "134.1 \u00b1 12.5",
+        "hdac6_ic50": "12.5 \u00b1 1.6"
+    },
+    {
+        "compound": "6b",
+        "hdac1_ic50": "14.7 \u00b1 8.8",
+        "hdac6_ic50": "14.8 \u00b1 1.9"
+    },
+    {
+        "compound": "6c",
+        "hdac1_ic50": "128.4 \u00b1 13.6",
+        "hdac6_ic50": "20.5 \u00b1 2.6"
+    },
+    {
+        "compound": "6d",
+        "hdac1_ic50": "16.1 \u00b1 15.9",
+        "hdac6_ic50": "16.7 \u00b1 0.4"
+    },
+    {
+        "compound": "6e",
+        "hdac1_ic50": "41.9 \u00b1 5.9",
+        "hdac6_ic50": "25.3 \u00b1 1.4"
+    },
+    {
+        "compound": "6f",
+        "hdac1_ic50": "147.5 \u00b1 4.9",
+        "hdac6_ic50": "26.0 \u00b1 1.8"
+    },
+    {
+        "compound": "6g",
+        "hdac1_ic50": "27.5 \u00b1 6.9",
+        "hdac6_ic50": "10.7 \u00b1 0.2"
+    },
+    {
+        "compound": "6h",
+        "hdac1_ic50": "12.9 \u00b1 14.1",
+        "hdac6_ic50": "19.5 \u00b1 2.5"
+    },
+    {
+        "compound": "6i",
+        "hdac1_ic50": "43.0 \u00b1 15.5",
+        "hdac6_ic50": "31.1 \u00b1 1.3"
+    },
+    {
+        "compound": "6j",
+        "hdac1_ic50": "27.8 \u00b1 5.6",
+        "hdac6_ic50": "14.4 \u00b1 0.9"
+    },
+    {
+        "compound": "6k",
+        "hdac1_ic50": "21.2 \u00b1 6.1",
+        "hdac6_ic50": "10.0 \u00b1 0.4"
+    },
+    {
+        "compound": "Vorinostat",
+        "hdac1_ic50": "101.0 \u00b1 5.8",
+        "hdac6_ic50": "34.3 \u00b1 2.1"
+    },
+    {
+        "compound": "Ricolinostat a",
+        "hdac1_ic50": "187.9 \u00b1 22.4",
+        "hdac6_ic50": "17.9 \u00b1 3.0"
+    },
+    {
+        "compound": "Tubastatin A",
+        "hdac1_ic50": "2490 \u00b1 140",
+        "hdac6_ic50": "14 \u00b1 0.6"
+    },
+    {
+        "compound": "HPOB",
+        "hdac1_ic50": "2100 \u00b1 230",
+        "hdac6_ic50": "85 \u00b1 9"
+   }
+]
