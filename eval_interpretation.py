@@ -12,14 +12,13 @@ import networkx as nx
 def load_json_files(dir_path: str):
 
     results = dict() # key: file-path; value: file-content
-    pattern = f"{dir_path}/**/*interpretation.json"
-    #print(pattern)
+    pattern = f"{dir_path}/**/*.json"
 
     cnt_loaded = 0
     for file_path in glob.glob(pattern, recursive=True): 
          
         basename = os.path.basename(file_path)
-        m = re.match("(.*)_page(\d+)_table(\d+)_interpretation.json", basename)
+        m = re.match("(.*)_page(\d+)_table(\d+).json", basename)
 
         if m:
             name, pageNr, tableNr = m.group(1), m.group(2), m.group(3)
@@ -29,13 +28,12 @@ def load_json_files(dir_path: str):
                 data = json.load(f)
 
                 if data:
-                    #print(data)
-                    items = results.get(name, list())
-                    # converting the list of dicts to the list of tuples (which can be hashed as keys in a dictionary)
-                    #items.append([tuple((k, v) for k,v in d.items()) for d in data])
+                    key = f"{name}_{pageNr}"
+                    items = results.get(key, list())
+                    # converting the list of dicts to the list of tuples (which can be hashed as, e.g., the keys in a dictionary)
                     items.append([tuple((k.replace(" ", ""), v.replace(" ", "")) for k,v in d.items()) for d in data])
                     
-                    results[name] = items
+                    results[key] = items
                     cnt_loaded += 1
                 else:
                     print(f"[FAILED] '{file_path}' cannot be parsed! Content: {data}")
@@ -59,6 +57,7 @@ def count_tuples(data, verbose):
 
     return total
 
+
 def print_dict(data):
     
     for k,v in data.items():
@@ -66,8 +65,10 @@ def print_dict(data):
         for idx, item in enumerate(v):
             print(f"  #{idx:02d}: {item}")
 
+
 def print_line(n: int = 50, prefix="", c='-'):
     print(f"{prefix}{c * n}")
+
 
 def _calc_scores(TP, FN, FP):
 
@@ -93,53 +94,6 @@ def _eval_pair(gt_data, res_data, TP, FN, FP):
 
     return TP, FN, FP
 
-def _create_graph_dummy():
-
-    # init a (bipartite) graph
-    G = nx.Graph()
-    gt_nodes, res_nodes, edges = set(), set(), set()
-    scores = dict()
-    
-    gt_nodes.add("gt_x1")
-    gt_nodes.add("gt_x2")
-    gt_nodes.add("gt_x3")
-
-    res_nodes.add("res_y1")
-    res_nodes.add("res_y2")
-    res_nodes.add("res_y3")
-    res_nodes.add("res_y4")
-   
-    weights = dict()
-    weights[("gt_x1", "res_y1")] = 0.9
-    weights[("gt_x1", "res_y2")] = 0.7
-    weights[("gt_x1", "res_y3")] = 0.1
-    weights[("gt_x1", "res_y4")] = 0.3
-
-    weights[("gt_x2", "res_y1")] = 0.3
-    weights[("gt_x2", "res_y2")] = 0.1
-    weights[("gt_x2", "res_y3")] = 0.6
-    weights[("gt_x2", "res_y4")] = 0.2
-
-    weights[("gt_x3", "res_y1")] = 0.5
-    weights[("gt_x3", "res_y2")] = 0.4
-    weights[("gt_x3", "res_y3")] = 0.2
-    weights[("gt_x3", "res_y4")] = 0.1
-
-    for gt_idx, gt_node in enumerate(gt_nodes):
-        for res_idx, res_node in enumerate(res_nodes):
-            weight = weights[(gt_node, res_node)]
-            scores[(gt_node, res_node)] = (0, 0, 0, 0, 0, weight)
-            edges.add((gt_node, res_node, weight))
-
-    G.add_nodes_from(gt_nodes, bipartite=0)
-    G.add_nodes_from(res_nodes, bipartite=1)
-    G.add_weighted_edges_from(edges)
-
-    print(f"\tgt_nodes:  {gt_nodes}")
-    print(f"\tres_nodes: {res_nodes}")
-    print(f"\tedges: {edges}")
-
-    return G, gt_nodes, res_nodes, {}, scores
 
 def _create_graph(gt_items, res_items):
 
@@ -171,9 +125,7 @@ def _create_graph(gt_items, res_items):
 
     print_line(n=30, prefix="\t")
     
-    # create a bipartite graph from the pairs and run maximum weighted matching
-    #gt_nodes = sorted(gt_nodes)
-    #res_nodes = sorted(res_nodes)
+    # create a bipartite graph from the pairs and run maximum weighted matching    
     G.add_nodes_from(gt_nodes, bipartite=0)
     G.add_nodes_from(res_nodes, bipartite=1)
     G.add_weighted_edges_from(edges)
@@ -184,13 +136,13 @@ def _create_graph(gt_items, res_items):
 
     return G, gt_nodes, res_nodes, node2item, scores
 
+
 def _eval_pairs_on_page(gt_items, res_items, TP, FN, FP):
     
     # calculate all scores for each pair of tables in the GT and RES data
     cnt_gt, cnt_res = len(gt_items), len(res_items)
 
-    G, gt_nodes, res_nodes, node2item, scores = _create_graph(gt_items, res_items)
-    #G, gt_nodes, res_nodes, node2item, scores = _create_graph_dummy()
+    G, gt_nodes, res_nodes, node2item, scores = _create_graph(gt_items, res_items)    
 
     matches = nx.max_weight_matching(G)
     print(f"MATCHES:   {matches}")
@@ -212,9 +164,6 @@ def _eval_pairs_on_page(gt_items, res_items, TP, FN, FP):
 
         gt_nodes.remove(gt_node)
         res_nodes.remove(res_node)
-
-    #print(f"REMAINING GT nodes:  {gt_nodes}")
-    #print(f"REMAINING RES nodes: {res_nodes}")
 
     if len(node2item) > 0:
         for n in gt_nodes:
@@ -249,8 +198,7 @@ def eval_data(gt_files, res_files, include_missed_tables):
     for key, gt_items in gt_files.items():
         if key in res_files:
             res_items = res_files[key]
-            print(f"'{key}' found in both references and results.")
-            #print_line()
+            print(f"'{key}' found in both references and results.")            
             TP, FN, FP = _eval_pairs_on_page(res_items, gt_items, TP, FN, FP)
             del res_files[key]
         else:
@@ -279,7 +227,6 @@ def eval_data(gt_files, res_files, include_missed_tables):
 
     precision, recall, F1 = _calc_scores(TP, FN, FP)
 
-    #print_line(n=100, c='=')
     print(f"TP:{TP} FP:{FP} FN:{FN} PRECISION={precision:.4f} RECALL={recall:.4f} F1={F1:.4f}")
 
 
@@ -288,7 +235,7 @@ if __name__ == "__main__":
     verbose = False
     gt_dir = "gt"
     res_dir = "res"
-    include_missed_tables = False
+    include_missed_tables = True
     
     gt_files = load_json_files(gt_dir)
     print_line(n=100)
