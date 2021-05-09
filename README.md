@@ -1,21 +1,81 @@
-# TABLE INTERPRETATION EXPERIMENT
+# Flexible Table Recognition and Semantic Interpretation System
+This repository contains the resources from our table interpretation experiments that were presented in our paper: "**Flexible Table Recognition and Semantic Interpretation System**", which was submitted to the [GCPR 2021](dagm-gcpr.de) conference.
 
-The format of the ground-truth and the recognized files with tuples should be as follows:
+## Background
 
+TODO
+
+## Project Structure
+
+The structure of the project is as follows:
+
+```
+.
+├── eval_interpretation.py
+├── README.md
+├── requirements.txt
+├── gt
+│   ├── 01_page04_table0.json
+│   ├── ...
+│   └── 13_page10_table1.json
+└── res
+    ├── 01_page04_table0.json
+    ├── ...
+    └── 13_page10_table1.json
+```
+
+* [eval_interpretation.py](./eval_interpretation.py) - the Python evaluation script.
+* [README.md](./README.md) - this readme file.
+* [requirements.txt](./requirements.txt) - Python packages required to run the evaluation script.
+* [gt](./gt) - ground-truth annotations containing relevant tuples of information that need to be extracted.
+* [res](./res) - the tuples extracted by our table interpretation method. 
+
+## Quick Start
+
+### Prerequisites
+
+1. Please install the python packages as shown below:
+
+```shell
+pip install -r requirements.txt
+```
+
+## Using the script
+
+To execute the script with default configuration just call:
+
+```shell
+python3 eval_interpretation.py
+```
+
+The last line of the output produced by the script contains the final information extraction scores, e.g., in the case of the results produced by our method:
+
+```
+TP:69 FP:4 FN:45 PRECISION=0.9452 RECALL=0.6053 F1=0.7380
+```
+
+where `TP`,`FP`,`FN` indicate the number of true-positive, false-positive, and false-negative relations, respectively.
+
+## Data Set 
+
+### Annotations
+
+The ground-truth annotations containing the lists of tuples of relevant information are provided in this repository. The name pattern of the ground-truth and the recognized files is as follows:
+
+```
 <FILE_ID>_<PAGE_NR>_<TABLE_IDX>.json
+```
+where `<FILE_ID>` is the file identifier (see the explanation in [Data Set](README.md#data-set)), `<PAGE_NR>` is the page number in the PDF file, and `<TABLE_IDX>` is the index of a table on a page (starting from "0").
 
-where <FILE_ID> is the file indentifier (see the explanation in "Data Set" below), <PAGE_NR> is the page number in the PDF file, and <TABLE_IDX> is the index of a table on a page (starting from "0").
+### PDF Files
 
+The PDF files containing the tables with the tuples of information that has been extracted in our experiments can be downloaded from the below listed locations. The numbers in the square brackets indicate the `FILE_IDs` of each PDF file, which are used to identify and match the gold and the recognized sets of tuples.
 
-# Data Set
+#### Evaluation Set
 
-The PDF files containing the tables with the tuples of information that are evaluated can be downloaded from the locations that we listed below. 
-We numbers in the square brackets indicate the FILE_IDs of ach PDF file used to identify and match the gold and the recognized sets of tuples.
+We fed the following PDF files to our table extraction system for evaluation:
 
-## Evaluation Set
-
-The PDF files that are used for evaluation are as follows:
-
+```
 [01] Asfaha, Y., Schrenk, C., Alves Avelar, L. A., Lange, F., Wang, C., Bandolik, J. J., Hamacher, A., Kassack, M. U., & Kurz, T. (2020). Novel alkoxyamide-based histone deacetylase inhibitors reverse cisplatin resistance in chemoresistant cancer cells. Bioorganic & medicinal chemistry, 28(1), 115108. https://doi.org/10.1016/j.bmc.2019.115108
 
 [02] Basso, M., Chen, H. H., Tripathy, D., Conte, M., Apperley, K., De Simone, A., Keillor, J. W., Ratan, R., Nebbioso, A., Sarno, F., Altucci, L., & Milelli, A. (2018). Designing Dual Transglutaminase 2/Histone Deacetylase Inhibitors Effective at Halting Neuronal Death. ChemMedChem, 13(3), 227–230. https://doi.org/10.1002/cmdc.201700601
@@ -41,11 +101,13 @@ The PDF files that are used for evaluation are as follows:
 [12] Debnath, S., Debnath, T., Bhaumik, S., Majumdar, S., Kalle, A. M., & Aparna, V. (2019). Discovery of novel potential selective HDAC8 inhibitors by combine ligand-based, structure-based virtual screening and in-vitro biological evaluation. Scientific reports, 9(1), 17174. https://doi.org/10.1038/s41598-019-53376-y
 
 [13] Xia, J., Hu, H., Xue, W., Wang, X. S., & Wu, S. (2018). The discovery of novel HDAC3 inhibitors via virtual screening and in vitro bioassay. Journal of enzyme inhibition and medicinal chemistry, 33(1), 525–535. https://doi.org/10.1080/14756366.2018.1437156
+```
 
-## Development Set
+#### Development Set
 
-The PDF files that are used for parameter tuning are as follows:
+We used the following PDF files to tune the hyper-parameter for our method:
 
+```
 [14] Kozikowski, A. P., Shen, S., Pardo, M., Tavares, M. T., Szarics, D., Benoy, V., Zimprich, C. A., Kutil, Z., Zhang, G., Bařinka, C., Robers, M. B., Van Den Bosch, L., Eubanks, J. H., & Jope, R. S. (2019). Brain Penetrable Histone Deacetylase 6 Inhibitor SW-100 Ameliorates Memory and Learning Impairments in a Mouse Model of Fragile X Syndrome. ACS chemical neuroscience, 10(3), 1679–1695. https://doi.org/10.1021/acschemneuro.8b00600
 
 [15] Lee, H. Y., Fan, S. J., Huang, F. I., Chao, H. Y., Hsu, K. C., Lin, T. E., Yeh, T. K., Lai, M. J., Li, Y. H., Huang, H. L., Yang, C. R., & Liou, J. P. (2018). 5-Aroylindoles Act as Selective Histone Deacetylase 6 Inhibitors Ameliorating Alzheimer's Disease Phenotypes. Journal of medicinal chemistry, 61(16), 7087–7102. https://doi.org/10.1021/acs.jmedchem.8b00151
@@ -53,3 +115,5 @@ The PDF files that are used for parameter tuning are as follows:
 [16] Stenzel, K., Hamacher, A., Hansen, F. K., Gertzen, C., Senger, J., Marquardt, V., Marek, L., Marek, M., Romier, C., Remke, M., Jung, M., Gohlke, H., Kassack, M. U., & Kurz, T. (2017). Alkoxyurea-Based Histone Deacetylase Inhibitors Increase Cisplatin Potency in Chemoresistant Cancer Cell Lines. Journal of medicinal chemistry, 60(13), 5334–5348. https://doi.org/10.1021/acs.jmedchem.6b01538
 
 [17] Yu, C. W., Hung, P. Y., Yang, H. T., Ho, Y. H., Lai, H. Y., Cheng, Y. S., & Chern, J. W. (2019). Quinazolin-2,4-dione-Based Hydroxamic Acids as Selective Histone Deacetylase-6 Inhibitors for Treatment of Non-Small Cell Lung Cancer. Journal of medicinal chemistry, 62(2), 857–874. https://doi.org/10.1021/acs.jmedchem.8b01590
+```
+
