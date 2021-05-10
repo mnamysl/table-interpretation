@@ -1,9 +1,9 @@
 # Flexible Table Recognition and Semantic Interpretation System
-This repository contains the resources from our table interpretation experiments that were presented in our paper: "**Flexible Table Recognition and Semantic Interpretation System**", which was submitted to the [GCPR 2021](dagm-gcpr.de) conference.
+This repository contains the resources from our table interpretation experiment that were presented in our paper: "**Flexible Table Recognition and Semantic Interpretation System**", which was submitted to the [GCPR 2021](dagm-gcpr.de) conference.
 
 ## Background
 
-TODO
+`**TODO**: explain table interpretation`
 
 ## Project Structure
 
@@ -55,6 +55,8 @@ TP:69 FP:4 FN:45 PRECISION=0.9452 RECALL=0.6053 F1=0.7380
 ```
 
 where `TP`,`FP`,`FN` indicate the number of true-positive, false-positive, and false-negative relations, respectively.
+
+`**TODO**: how to switch between the end-to-end and interpretation-only modes!`
 
 ## Data Set 
 
