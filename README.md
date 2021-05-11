@@ -56,7 +56,7 @@ TP:69 FP:4 FN:45 PRECISION=0.9452 RECALL=0.6053 F1=0.7380
 
 where `TP`,`FP`,`FN` indicate the number of true-positive, false-positive, and false-negative relations, respectively.
 
-The script calculates the scores of the end-to-end table extraction process by default. In order to switch to the calculation solely from the correctly recognized tables, you need to set the following line in the code:
+The script calculates the scores of the end-to-end table extraction process by default. In order to switch to the calculation solely from the correctly recognized tables, you need to edit the line number`238` in the code:
 
 ```py
 include_missed_tables = False
