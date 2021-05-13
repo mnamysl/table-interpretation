@@ -1,0 +1,53 @@
+[
+    {
+	"compound": "SAHA d",
+        "hdac1_ic50": "33 \u00b1 1",
+        "hdac6_ic50": "33 \u00b1 3"
+    },
+    {
+	"compound": "Tubastatin d",
+        "hdac1_ic50": "2,700 \u00b1 200",
+        "hdac6_ic50": "31 \u00b1 4"
+    },
+    {
+	"compound": "PCI-34051",
+        "hdac1_ic50": "-",
+        "hdac6_ic50": "-"
+    },
+    {
+	"compound": "1b (ethyl)",
+        "hdac1_ic50": "4,400 \u00b1 300",
+        "hdac6_ic50": "160 \u00b1 10"
+    },
+    {
+	"compound": "1c (n-butyl)",
+        "hdac1_ic50": "15,000 \u00b1 1000",
+        "hdac6_ic50": "88 \u00b1 7"
+    },
+    {
+	"compound": "1d (n-hexyl)",
+        "hdac1_ic50": "35,000 \u00b1 1000",
+        "hdac6_ic50": "140 \u00b1 10"
+    },
+    {
+	"compound": "1e (phenyl)",
+        "hdac1_ic50": "11,000 \u00b1 1000",
+        "hdac6_ic50": "110 \u00b1 10"
+    },
+    {
+	"compound": "1f (benzyl)",
+        "hdac1_ic50": "29,000 \u00b1 1000",
+        "hdac6_ic50": "140 \u00b1 10"
+    },
+    {
+	"compound": "(R)-1f",
+        "hdac1_ic50": "25,000 \u00b1 2000",
+        "hdac6_ic50": "48 \u00b1 8"
+    },
+    {
+	"compound": "(S)-1f",
+        "hdac1_ic50": "40,000 \u00b1 1000",
+        "hdac6_ic50": "95 \u00b1 9"
+    }
+
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "compound": "SD-01",
+        "hdac6_ic50": ">100"
+    },
+    {
+        "compound": "SD-02",
+        "hdac6_ic50": "0.62"
+    },
+    {
+        "compound": "SD-03",
+        "hdac6_ic50": ">100"
+    },
+    {
+        "compound": "SD-04",
+        "hdac6_ic50": ">100"
+    },
+    {
+        "compound": "SD-05",
+        "hdac6_ic50": "30.86"
+    }
+]

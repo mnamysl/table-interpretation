@@ -1,0 +1,22 @@
+[
+    {
+        "compound": "2",
+        "hdac1_ic50": "12.7",
+        "hdac6_ic50": ">100"
+    },
+    {
+        "compound": "2\u20131",
+        "hdac1_ic50": "0.957",
+        "hdac6_ic50": ">100"
+    },
+    {
+        "compound": "2\u20132",
+        "hdac1_ic50": "16.6",
+        "hdac6_ic50": ">100"
+    },
+    {
+        "compound": "Positive drug",
+        "hdac1_ic50": "0.0633",
+        "hdac6_ic50": "0.0222"
+    }
+]
