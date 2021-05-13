@@ -89,7 +89,7 @@ We fed the following PDF files to our table extraction system for evaluation:
 
 <details>
   <summary>Click to expand!</summary>
-  
+
   [01] Asfaha, Y., Schrenk, C., Alves Avelar, L. A., Lange, F., Wang, C., Bandolik, J. J., Hamacher, A., Kassack, M. U., & Kurz, T. (2020). Novel alkoxyamide-based histone deacetylase inhibitors reverse cisplatin resistance in chemoresistant cancer cells. Bioorganic & medicinal chemistry, 28(1), 115108. https://doi.org/10.1016/j.bmc.2019.115108
     
   [02] Basso, M., Chen, H. H., Tripathy, D., Conte, M., Apperley, K., De Simone, A., Keillor, J. W., Ratan, R., Nebbioso, A., Sarno, F., Altucci, L., & Milelli, A. (2018). Designing Dual Transglutaminase 2/Histone Deacetylase Inhibitors Effective at Halting Neuronal Death. ChemMedChem, 13(3), 227–230. https://doi.org/10.1002/cmdc.201700601
@@ -122,13 +122,18 @@ We fed the following PDF files to our table extraction system for evaluation:
 
 We used the following PDF files to tune the hyper-parameter for our method:
 
-[14] Kozikowski, A. P., Shen, S., Pardo, M., Tavares, M. T., Szarics, D., Benoy, V., Zimprich, C. A., Kutil, Z., Zhang, G., Bařinka, C., Robers, M. B., Van Den Bosch, L., Eubanks, J. H., & Jope, R. S. (2019). Brain Penetrable Histone Deacetylase 6 Inhibitor SW-100 Ameliorates Memory and Learning Impairments in a Mouse Model of Fragile X Syndrome. ACS chemical neuroscience, 10(3), 1679–1695. https://doi.org/10.1021/acschemneuro.8b00600
+<details>
+  <summary>Click to expand!</summary>
 
-[15] Lee, H. Y., Fan, S. J., Huang, F. I., Chao, H. Y., Hsu, K. C., Lin, T. E., Yeh, T. K., Lai, M. J., Li, Y. H., Huang, H. L., Yang, C. R., & Liou, J. P. (2018). 5-Aroylindoles Act as Selective Histone Deacetylase 6 Inhibitors Ameliorating Alzheimer's Disease Phenotypes. Journal of medicinal chemistry, 61(16), 7087–7102. https://doi.org/10.1021/acs.jmedchem.8b00151
+  [14] Kozikowski, A. P., Shen, S., Pardo, M., Tavares, M. T., Szarics, D., Benoy, V., Zimprich, C. A., Kutil, Z., Zhang, G., Bařinka, C., Robers, M. B., Van Den Bosch, L., Eubanks, J. H., & Jope, R. S. (2019). Brain Penetrable Histone Deacetylase 6 Inhibitor SW-100 Ameliorates Memory and Learning Impairments in a Mouse Model of Fragile X Syndrome. ACS chemical neuroscience, 10(3), 1679–1695. https://doi.org/10.1021/acschemneuro.8b00600
 
-[16] Stenzel, K., Hamacher, A., Hansen, F. K., Gertzen, C., Senger, J., Marquardt, V., Marek, L., Marek, M., Romier, C., Remke, M., Jung, M., Gohlke, H., Kassack, M. U., & Kurz, T. (2017). Alkoxyurea-Based Histone Deacetylase Inhibitors Increase Cisplatin Potency in Chemoresistant Cancer Cell Lines. Journal of medicinal chemistry, 60(13), 5334–5348. https://doi.org/10.1021/acs.jmedchem.6b01538
+  [15] Lee, H. Y., Fan, S. J., Huang, F. I., Chao, H. Y., Hsu, K. C., Lin, T. E., Yeh, T. K., Lai, M. J., Li, Y. H., Huang, H. L., Yang, C. R., & Liou, J. P. (2018). 5-Aroylindoles Act as Selective Histone Deacetylase 6 Inhibitors Ameliorating Alzheimer's Disease Phenotypes. Journal of medicinal chemistry, 61(16), 7087–7102. https://doi.org/10.1021/acs.jmedchem.8b00151
 
-[17] Yu, C. W., Hung, P. Y., Yang, H. T., Ho, Y. H., Lai, H. Y., Cheng, Y. S., & Chern, J. W. (2019). Quinazolin-2,4-dione-Based Hydroxamic Acids as Selective Histone Deacetylase-6 Inhibitors for Treatment of Non-Small Cell Lung Cancer. Journal of medicinal chemistry, 62(2), 857–874. https://doi.org/10.1021/acs.jmedchem.8b01590
+  [16] Stenzel, K., Hamacher, A., Hansen, F. K., Gertzen, C., Senger, J., Marquardt, V., Marek, L., Marek, M., Romier, C., Remke, M., Jung, M., Gohlke, H., Kassack, M. U., & Kurz, T. (2017). Alkoxyurea-Based Histone Deacetylase Inhibitors Increase Cisplatin Potency in Chemoresistant Cancer Cell Lines. Journal of medicinal chemistry, 60(13), 5334–5348. https://doi.org/10.1021/acs.jmedchem.6b01538
+
+  [17] Yu, C. W., Hung, P. Y., Yang, H. T., Ho, Y. H., Lai, H. Y., Cheng, Y. S., & Chern, J. W. (2019). Quinazolin-2,4-dione-Based Hydroxamic Acids as Selective Histone Deacetylase-6 Inhibitors for Treatment of Non-Small Cell Lung Cancer. Journal of medicinal chemistry, 62(2), 857–874. https://doi.org/10.1021/acs.jmedchem.8b01590
+
+</details>
 
 ## Citing Our Work
 
