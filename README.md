@@ -1,10 +1,6 @@
 # Flexible Table Recognition and Semantic Interpretation System
 This repository contains the resources from our table interpretation experiment that were presented in §6 of our paper: "**Flexible Table Recognition and Semantic Interpretation System**".
 
-## Table Interpretation
-
-Please refer to §4 of our paper for a detailed description of our table interpretation method.
-
 ## Project Structure
 
 The structure of the project is as follows:
@@ -14,6 +10,8 @@ The structure of the project is as follows:
 ├── eval_interpretation.py
 ├── README.md
 ├── requirements.txt
+├── cfg
+│   └── interpretation_rules.cfg
 ├── gt
 │   ├── 01_page04_table0.json
 │   ├── ...
@@ -27,6 +25,7 @@ The structure of the project is as follows:
 * [eval_interpretation.py](./eval_interpretation.py) - the Python evaluation script.
 * [README.md](./README.md) - this readme file.
 * [requirements.txt](./requirements.txt) - Python packages required to run the evaluation script.
+* [cfg](./cfg) - table interpretation rules (configuration file)
 * [gt](./gt) - ground-truth annotations containing relevant tuples of information that need to be extracted.
 * [res](./res) - the tuples extracted by our table interpretation method. 
 
@@ -134,18 +133,6 @@ We used the following PDF files to tune the hyper-parameter for our method:
   [17] Yu, C. W., Hung, P. Y., Yang, H. T., Ho, Y. H., Lai, H. Y., Cheng, Y. S., & Chern, J. W. (2019). Quinazolin-2,4-dione-Based Hydroxamic Acids as Selective Histone Deacetylase-6 Inhibitors for Treatment of Non-Small Cell Lung Cancer. Journal of medicinal chemistry, 62(2), 857–874. https://doi.org/10.1021/acs.jmedchem.8b01590
 
 </details>
-
-## Citing Our Work
-
-Please cite our paper when using the code:
-
-```
-TBA
-```
-
-## Authors
-
-* Marcin Namysl [dblp](https://dblp.uni-trier.de/pers/hd/n/Namysl:Marcin), [orcid](https://orcid.org/0000-0001-7066-1726), [Google Scholar](https://scholar.google.com/citations?user=JeY8avoAAAAJ&hl=en&oi=sra), [Semantic Scholar](https://www.semanticscholar.org/author/Marcin-Namysl/134442417)
 
 ## License
 
