@@ -1,5 +1,5 @@
 # Flexible Table Recognition and Semantic Interpretation System
-This repository contains the resources from our table interpretation experiment that were presented in §6 of our paper: "**Flexible Table Recognition and Semantic Interpretation System**".
+This repository contains the resources from our table interpretation experiment that were presented in §6 of our paper: "[**Flexible Table Recognition and Semantic Interpretation System**](https://arxiv.org/abs/2105.11879)".
 
 ## Project Structure
 
@@ -133,6 +133,21 @@ We used the following PDF files to tune the hyper-parameter for our method:
   [17] Yu, C. W., Hung, P. Y., Yang, H. T., Ho, Y. H., Lai, H. Y., Cheng, Y. S., & Chern, J. W. (2019). Quinazolin-2,4-dione-Based Hydroxamic Acids as Selective Histone Deacetylase-6 Inhibitors for Treatment of Non-Small Cell Lung Cancer. Journal of medicinal chemistry, 62(2), 857–874. https://doi.org/10.1021/acs.jmedchem.8b01590
 
 </details>
+
+## Citing Our Work
+
+Please cite our paper when using the code:
+
+```
+@misc{namysl2021tabiais,
+      title={Tab.IAIS: Flexible Table Recognition and Semantic Interpretation System}, 
+      author={Marcin Namysl and Alexander M. Esser and Sven Behnke and Joachim Köhler},
+      year={2021},
+      eprint={2105.11879},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
 ## License
 
