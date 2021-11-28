@@ -1,5 +1,5 @@
 # Flexible Table Recognition and Semantic Interpretation System
-This repository contains the resources from our table interpretation experiment that were presented in §6 of our paper: "**Flexible Table Recognition and Semantic Interpretation System**".
+This repository contains the resources from our table interpretation experiment that were presented in §6 of our paper: [**Flexible Table Recognition and Semantic Interpretation System**](https://arxiv.org/abs/2105.11879).
 
 ## Table Interpretation
 
@@ -139,7 +139,7 @@ We used the following PDF files to tune the hyper-parameter for our method:
 
 Please cite our paper when using the code:
 
-```
+```bibtex
 @misc{namysl2021tabiais,
       title={Tab.IAIS: Flexible Table Recognition and Semantic Interpretation System}, 
       author={Marcin Namysl and Alexander M. Esser and Sven Behnke and Joachim Köhler},
