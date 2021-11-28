@@ -140,7 +140,14 @@ We used the following PDF files to tune the hyper-parameter for our method:
 Please cite our paper when using the code:
 
 ```
-TBA
+@misc{namysl2021tabiais,
+      title={Tab.IAIS: Flexible Table Recognition and Semantic Interpretation System}, 
+      author={Marcin Namysl and Alexander M. Esser and Sven Behnke and Joachim Köhler},
+      year={2021},
+      eprint={2105.11879},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## Authors
