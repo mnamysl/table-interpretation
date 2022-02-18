@@ -138,7 +138,7 @@ We used the following PDF files to tune the hyper-parameter for our method:
 
 Please cite our paper when using the code:
 
-```
+```bibtex
 @conference{namysl2022flexible,
 author={Marcin Namysl. and Alexander Esser. and Sven Behnke. and Joachim Köhler.},
 title={Flexible Table Recognition and Semantic Interpretation System},
