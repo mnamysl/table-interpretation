@@ -139,16 +139,16 @@ We used the following PDF files to tune the hyper-parameter for our method:
 Please cite our paper when using the code:
 
 ```bibtex
-@conference{namysl2022flexible,
-author={Marcin Namysl. and Alexander Esser. and Sven Behnke. and Joachim Köhler.},
-title={Flexible Table Recognition and Semantic Interpretation System},
-booktitle={Proceedings of the 17th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications - Volume 4: VISAPP,},
-year={2022},
-pages={27-37},
-publisher={SciTePress},
-organization={INSTICC},
-doi={10.5220/0010767600003124},
-isbn={978-989-758-555-5},
+@Conference{namysl2022flexible,
+  author       = {Marcin Namysl. and Alexander Esser. and Sven Behnke. and Joachim Köhler.},
+  title        = {Flexible Table Recognition and Semantic Interpretation System},
+  booktitle    = {Proceedings of the 17th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications - Volume 4: VISAPP,},
+  year         = {2022},
+  pages        = {27-37},
+  organization = {INSTICC},
+  publisher    = {SciTePress},
+  doi          = {10.5220/0010767600003124},
+  isbn         = {978-989-758-555-5},
 }
 ```
 
